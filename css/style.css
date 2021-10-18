@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+	background: url(../images/bg.png);
+	width: 100%;
+	height: 150vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:980px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+::placeholder {
+  color:#D3CFCB;
+}
+header{
+	width: 100%;
+}
+section.wrapper{
+	
+}
+header #head{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+header #head div.left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header #head div.left div.logo{
+	width: 20%;
+}
+header #head div.left div.logo img{
+	display: block;
+	width: 100%;
+}
+header #head div.left ul{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+header #head div.left ul li{
+	margin-right: 25px;
+}
+header div.left ul li:last-child{
+	margin-right: 0;
+}
+header div.left ul li a{
+	color: #fff;
+	font-size: 15px;
+}
+header div.left ul li a img{
+	width: 15%;
+}
+header div.right{
+	display: flex;
+	justify-content: space-between;
+}
+header #head div.right ul{
+	display: flex;
+}
+header #head div.right ul li{
+	margin-right: 25px;
+
+}
+header #head div.right ul li:last-child{
+	margin-right: 0;
+}
+header #head div.right ul li a{
+	color: #fff;
+	font-size: 18px;
+}
+header #head div.right ul li a.button{
+	background: #2dca73;
+	padding: 15px 25px;
+    border-radius: 8px;
+}
+#middle{
+	width: 100%;
+	
+}
+#middle section.wrapper{
+
+}
+#middle #spotlight{
+	text-align: center;
+	margin-top: 150px;
+}
+#middle #spotlight h2{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+#middle #spotlight p{
+	font-size: 18px;
+    color: #fff;
+	margin-bottom: 40px;
+}
+#middle #spotlight form{
+	width: 60%;
+	margin: 0 auto;
+	padding: 12px 0;
+	background: #fff;
+	border-radius: 8px;
+}
+#middle #spotlight form input[type="text"]{
+	background: #fff;
+	width: 70%;
+    padding: 10px 20px;
+	border: 1px solid #2dca73;
+	border-radius: 8px;
+}
+#middle #spotlight form input.button{
+	background: #2dca73;
+	padding: 12px 35px;
+    border-radius: 8px;
+	color: #fff;
+	font-weight: 600;
+	margin-left: 15px;
+}
+@media all and (max-width: 980px){
+	#middle #spotlight form {
+		width: 65%;
+	}
+	#middle #spotlight form input.button {
+		margin-left: 4px;
+	}
+	#middle #spotlight h2 {
+		font-size: 50px;
+	}
+	header #head div.left ul li {
+		margin-right: 20px;
+	}
+}
+@media all and (max-width: 768px){
+	header #head div.left ul {
+		display: none;
+	}
+	header #head div.left div.logo {
+		width: 70%;
+	}
+	header #head div.right ul li {
+		margin-right: 50px;
+	}
+	#middle #spotlight h2 {
+		font-size: 40px;
+	}
+	#middle #spotlight p {
+		font-size: 13px;
+	}
+	#middle #spotlight form input[type="text"] {
+		width: 60%;
+	}
+	#middle #spotlight h2{
+		margin-bottom: 25px;
+	}
+}
+@media all and (max-width: 640px){
+	#middle #spotlight h2 {
+		font-size: 35px;
+	}
+	#middle #spotlight p {
+		font-size: 10px;
+	}
+	#middle #spotlight form input.button {
+		padding: 12px 29px;
+	}
+	#middle #spotlight form {
+		width: 70%;
+	}
+}
+@media all and (max-width: 480px){
+	header #head div.right ul li {
+		margin-right: 20px;
+	}
+	#middle #spotlight h2 {
+		font-size: 25px;
+	}
+	#middle #spotlight p {
+		font-size: 8px;
+	}
+	#middle #spotlight form input[type="text"] {
+		padding: 8px 5px;
+	}
+	#middle #spotlight form input.button {
+		padding: 8px 21px;
+	}
+	#middle #spotlight form {
+		width: 90%;
+	}
+}
+@media all and (max-width: 360px){
+	#middle #spotlight form {
+		width: 90%;
+	}
+}
